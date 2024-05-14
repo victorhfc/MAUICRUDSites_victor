@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="etValor1"
+                Placeholder="Informe o Primeiro Valor"/>
+            
+            <Entry
+                x:Name="etValor2"
+                Placeholder="Informe o Segundo Valor"/>
+            
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                >
+
+                <Button
+                x:Name="BtSomar"
+                Text="+"
+                HorizontalOptions="Center" 
+                Clicked="BtSomar_Clicked"
+                Margin="10,10,10,10"/>
+                
+                <Button
+                x:Name="BtSubtrair"
+                Text="-"
+                HorizontalOptions="Center" 
+                Clicked="BtSubtrair_Clicked"
+                Margin="10,10,10,10"/>
+                
+                <Button
+                x:Name="BtDividir"
+                Text="/"
+                HorizontalOptions="Center" 
+                Clicked="BtDividir_Clicked"
+                Margin="10,10,10,10"/>
+                
+                <Button
+                x:Name="BtDividirResto"
+                Text="%"
+                HorizontalOptions="Center"
+                Clicked="BtDividirResto_Clicked"
+                Margin="10,10,10,10"/>
+                
+                <Button
+                x:Name="BtMultiplicar"
+                Text="X"
+                HorizontalOptions="Center"
+                Clicked="BtMultiplicar_Clicked"
+                Margin="10,10,10,10"/>
+                
+            </HorizontalStackLayout>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
